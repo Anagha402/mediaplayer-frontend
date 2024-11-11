@@ -70,7 +70,7 @@ function View({uploadVideoResponse,setDropVideoResponse}) {
         allVideos?.length>0?allVideos.map((video,index)=>(
 
       <Col key={index} sm={12} md={6} lg={4}>
-      <VideoCard video={video}/>
+      <VideoCard video={video} setDeleteVideoResponse={setDeleteVideoResponse}/>
       </Col>
 
 
